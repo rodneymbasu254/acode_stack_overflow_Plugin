@@ -8,6 +8,7 @@ As a developer, you might run into an error and you may want to be assisted by y
 
 # Acode
 Just like popular IDEs whether Eclipse, Vscode, Nano, Vim etc. Acode is an android code editor. It is lightweight and has an appealing interface. The  fun fact about Acode is that you can install plugins. 
+
 ![Acode](https://github.com/rodneymbasu254/acode_stack_overflow_Plugin/assets/122750072/5d74b322-bf4e-40d3-8251-23a39584d059)
 
 
