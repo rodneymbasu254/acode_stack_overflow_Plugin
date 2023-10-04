@@ -1,1 +1,18 @@
-
+{
+  "id": "acode.plugin.stack_overflow",
+  "name": "StackOverflow",
+  "main": "dist/main.js",
+  "version": "1.1.0",
+  "readme": "readme.md",
+  "icon": "icon.png",
+  "files": [
+    
+    ],
+  "price": 0,
+  
+  "author": {
+    "name": "Mbasu Rodney",
+    "email": "rodneymbasu@gmail.com",
+    "github": "rodneymbasu254"
+  }
+}
