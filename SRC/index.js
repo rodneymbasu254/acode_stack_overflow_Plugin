@@ -26,7 +26,7 @@ class Stack {
   async init($page) {
     this.$darkThemeFile = tag("link", {
       rel: "stylesheet", 
-      this.baseUrl + "assets/dark-theme.css"
+      this.baseUrl + "assets/dark-mode.css"
                               });
     
     
