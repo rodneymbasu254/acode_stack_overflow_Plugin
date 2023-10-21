@@ -15,3 +15,6 @@ Just like popular IDEs whether Eclipse, Vscode, Nano, Vim etc. Acode is an andro
 # How it WORKS
 Stack overflow plugin is an interface that helps the developer diagnose an error, copy the error then posts the error as a question on stack overflow's user question panel. This is essential as the developer will not be needing to exit the app to an external browser so as to ask the question. Received response can then be used by the developer to correct his/her errors.
 
+# Usage
+Before using this plugin, you must have a stack oveflow account,  this means that you as a developer will have to access your account directly from Acode enabling you to ask, answer and vote any question. 
+
