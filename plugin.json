@@ -6,7 +6,11 @@
   "readme": "readme.md",
   "icon": "icon.png",
   "files": [
-    
+    "assets/User_Avatar.png",
+    "assets/highlight.min.js",
+    "assets/markdown-it.min.js",
+    "assets/dark-mode.css",
+    "assets/stack_overflow.png"
     ],
   "price": 0,
   
