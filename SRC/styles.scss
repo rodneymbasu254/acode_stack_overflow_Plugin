@@ -1,1 +1,19 @@
 
+#acode-stack_overflow_plugin {
+  * { box-sizing: border-box; }
+  
+  .mainApp {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 80px);
+    background: var(--primary-color);
+  }
+  
+  .chatBox {
+    height: 100%;
+    width: 100%;
+    white-space: pre-wrap;
+    overflow-y: auto;
+  }
+  
