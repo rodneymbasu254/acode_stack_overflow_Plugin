@@ -41,6 +41,19 @@ class Stack {
     });
     document.head.append(this.$darkModeFile, this.$higlightJsFile, this.$markdownItFile, this.$style)
 
+    editor.commands.addCommand({
+      name: "StackOverflow",
+      description: "Stack Overflow",
+      bindKey: {win: 'Ctrl-Shift-S'},
+      exec: this.run.bind(this),
+    });
+    
+    editor.commands.addCommand({
+      name: "stackOverflow_update_token",
+      description: "Update Stack Overflow Token",
+      exec: this.updateApiToken.bind(this),
+    });
+
     
     
     
