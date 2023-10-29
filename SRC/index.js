@@ -6,10 +6,11 @@ import { base64StringToBlob } from "blob-util";
 import { v4 as uuidv4 } from 'uuid';
 import copy from 'copy-to-clipboard';
 
-const multiPrompt = acode.require('multiPrompt');
+
 const fs = acode.require('fs');
 const DialogBox = acode.require('dialogBox');
 const helpers = acode.require("helpers");
+const multiPrompt = acode.require('multiPrompt');
 const loader = acode.require("loader");
 const sidebarApps = acode.require('sidebarApps');
 const toInternalUrl = acode.require('toInternalUrl');
@@ -27,7 +28,8 @@ class Stack {
     this.$darkThemeFile = tag("link", {
       rel: "stylesheet", 
       this.baseUrl + "assets/dark-mode.css"
-                              });
+      });
+    
     
     
 https://stackoverflow.com/oauth
