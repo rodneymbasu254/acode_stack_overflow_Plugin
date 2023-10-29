@@ -29,6 +29,19 @@ class Stack {
       rel: "stylesheet", 
       this.baseUrl + "assets/dark-mode.css"
       });
+     this.$higlightJsFile = tag("script", {
+      src: this.baseUrl + "assets/highlight.min.js"
+    });
+    this.$markdownItFile = tag("script", {
+      src: this.baseUrl + "assets/markdown-it.min.js"
+    });
+    // Global styles
+    this.$style = tag("style", {
+      textContent: style,
+    });
+    document.head.append(this.$darkModeFile, this.$higlightJsFile, this.$markdownItFile, this.$style)
+
+    
     
     
     
