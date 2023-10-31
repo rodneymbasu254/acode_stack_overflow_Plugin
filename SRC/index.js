@@ -54,6 +54,28 @@ class Stack {
       exec: this.updateApiToken.bind(this),
     });
 
+     $page.id = "acode_stack_overflow_plugin";
+    $page.settitle("Stack Overflow");
+    this.$page = $page;
+    const menuBtn = tag("span", {
+      className: "icon more_vert",
+      dataset: {
+        action: "toggle-menu"
+      }
+    });
+    
+    // button for new chat
+    const newMsgBtn = tag("span", {
+      className: "icon add",
+      dataset: {
+        action: "new-message"
+      }
+    });
+    this.$page.header.append(newMsgBtn, menuBtn);
+    
+    menuBtn.onclick = this.myHistory.bind(this);
+    newMsgBtn.onclick = this.newChat.bind(this);
+
     
     
     
