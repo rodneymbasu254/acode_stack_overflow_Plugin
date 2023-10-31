@@ -116,7 +116,7 @@ class Stack {
         required: true,
         placeholder: "Enter your Stack Overflow api key"
       }],
-      "https://stackexchange.com/oauth/"
+      "https://stackapps.com/apps/create/"
     );
     window.localStorage.setItem("stackOverflow-api-key", newApiToken["token"]);
     window.toast("Api key updated!", 3000);
