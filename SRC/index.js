@@ -99,8 +99,8 @@ class Stack {
     this.$inputBox.append(this.$chatTextarea, this.$sendBtn);
     mainApp.append(this.$inputBox, this.$chatBox)
     this.$page.append(mainApp);
-    // array for storing prompts
-    this.$promptsArray = [];
+    // array for storing received answers
+    this.$answerArray = [];
 
     
     
