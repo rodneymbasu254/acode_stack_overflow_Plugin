@@ -125,5 +125,6 @@ class Stack {
     
     
     
-    
+https://stackoverflow.com/questions/ask  
+https://stackoverflow.com/users/
 https://stackoverflow.com/oauth
