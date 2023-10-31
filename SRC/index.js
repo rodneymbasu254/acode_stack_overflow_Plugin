@@ -116,7 +116,7 @@ class Stack {
         required: true,
         placeholder: "Enter your Stack Overflow api key"
       }],
-      "https://stackapps.com/apps/create/"
+      "https://stackoverflow.com/oauth/client_id=27386"
     );
     window.localStorage.setItem("stackOverflow-api-key", newApiToken["token"]);
     window.toast("Api key updated!", 3000);
@@ -127,4 +127,4 @@ class Stack {
     
 https://stackoverflow.com/questions/ask  
 https://stackoverflow.com/users/
-https://stackoverflow.com/oauth
+https://stackoverflow.com/oauth/client_id=27386
