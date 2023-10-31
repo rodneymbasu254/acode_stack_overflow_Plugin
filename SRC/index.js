@@ -76,6 +76,32 @@ class Stack {
     menuBtn.onclick = this.myHistory.bind(this);
     newMsgBtn.onclick = this.newChat.bind(this);
 
+     const mainApp = tag("div", {
+      className: "mainApp",
+    });
+    // main chat box
+    this.$chatBox = tag("div", {
+      className: "chatBox",
+    });
+    // bottom query taker box
+    this.$inputBox = tag("div", {
+      className: "inputBox",
+    });
+    
+    this.$chatTextarea = tag("textarea", {
+      className: "chatTextarea",
+      placeholder: "Type or paste your error message. "
+    });
+    this.$sendBtn = tag("button", {
+      className: "sendBtn",
+    });
+    this.$sendBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14L21 3m0 0l-6.5 18a.55.55 0 0 1-1 0L10 14l-7-3.5a.55.55 0 0 1 0-1L21 3"/></svg>`;
+    this.$inputBox.append(this.$chatTextarea, this.$sendBtn);
+    mainApp.append(this.$inputBox, this.$chatBox)
+    this.$page.append(mainApp);
+    // array for storing prompts
+    this.$promptsArray = [];
+
     
     
     
