@@ -102,6 +102,26 @@ class Stack {
     // array for storing received answers
     this.$answerArray = [];
 
+
+     async updateApiToken() {
+    /*
+    update stack overflow token from stack exchange
+    */
+    window.localStorage.removeItem('stackOverflow-api-key');
+    let newApiToken = await multiPrompt(
+      "Enter your Stack Overflow API key",
+      [{
+        type: "text",
+        id: "token",
+        required: true,
+        placeholder: "Enter your Stack Overflow api key"
+      }],
+      "https://stackexchange.com/oauth/"
+    );
+    window.localStorage.setItem("stackOverflow-api-key", newApiToken["token"]);
+    window.toast("Api key updated!", 3000);
+  }
+
     
     
     
