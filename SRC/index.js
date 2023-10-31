@@ -116,6 +116,8 @@ class Stack {
         required: true,
         placeholder: "Enter your Stack Overflow api key"
       }],
+      const client_id = "27386";
+      const redirect_uri = "https://stackexchange.com/oauth/login_success";
       "https://stackoverflow.com/oauth/client_id=27386"
     );
     window.localStorage.setItem("stackOverflow-api-key", newApiToken["token"]);
@@ -128,3 +130,4 @@ class Stack {
 https://stackoverflow.com/questions/ask  
 https://stackoverflow.com/users/
 https://stackoverflow.com/oauth/client_id=27386
+Q1AW2GZJ3MeKr4rq8SjdWg((
