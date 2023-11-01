@@ -118,7 +118,7 @@ class Stack {
       }],
       const client_id = "27386";
       const redirect_uri = "https://stackexchange.com/oauth/login_success";
-      "https://stackoverflow.com/oauth/client_id=27386"
+      "https://stackoverflow.com/oauth$["client_id","redirect_uri"];
     );
     window.localStorage.setItem("stackOverflow-api-key", newApiToken["token"]);
     window.toast("Api key updated!", 3000);
