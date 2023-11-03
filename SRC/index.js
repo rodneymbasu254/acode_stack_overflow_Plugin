@@ -123,6 +123,35 @@ class Stack {
     window.localStorage.setItem("stackOverflow-api-key", newApiToken["token"]);
     window.toast("Api key updated!", 3000);
   }
+    
+ async destroy() {
+    sidebarApps.remove("acode_stack_overflow_plugin");
+    editorManager.editor.commands.removeCommand("Stack Overflow");
+    editorManager.editor.commands.removeCommand("stackOverflow_update_token");
+    window.localStorage.removeItem('stackOverflow-api-key');
+    this.$dark-mode.remove();
+    this.$higlightJsFile.remove();
+    this.$markdownItFile.remove();
+    this.$style.remove();
+  }
+}
+
+if (window.acode) {
+  const acodePlugin = new stackOverflow();
+  acode.setPluginInit(
+    plugin.id,
+    (baseUrl, $page, { cacheFileUrl, cacheFile }) => {
+      if (!baseUrl.endsWith("/")) {
+        baseUrl += "/";
+      }
+      acodePlugin.baseUrl = baseUrl;
+      acodePlugin.init($page, cacheFile, cacheFileUrl);
+    }
+  );
+  acode.setPluginUnmount(plugin.id, () => {
+    acodePlugin.destroy();
+  });
+}
 
     
     
