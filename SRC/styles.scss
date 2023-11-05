@@ -37,4 +37,14 @@
         
         img { width: 60%; }
       }
+
+     .message {
+        flex: 1;
+        color: var(--primary-text-color);
+        font-size: 16px;
+        line-height: 1.5;
+        user-select: text;
+      }
+    }
+  }
   
