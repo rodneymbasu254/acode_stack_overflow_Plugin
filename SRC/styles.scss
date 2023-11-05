@@ -46,5 +46,26 @@
         user-select: text;
       }
     }
-  }
-  
+ 
+  .copy-button{
+        position: absolute;
+        top: 4px;
+        right: 8px;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+        height: 24px;
+        width: 28px;
+        color: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        background: rgb(26,34,46);
+        box-shadow: 0 4px 0 #1b232f;
+        transition: all 0.3s ease-in-out;
+        &:active{
+          box-shadow: 0;
+          color: orange;
+        }
+      }
