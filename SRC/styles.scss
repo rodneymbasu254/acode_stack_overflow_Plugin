@@ -16,4 +16,25 @@
     white-space: pre-wrap;
     overflow-y: auto;
   }
+
+.wrapper {
+    padding-block: 12px;
+    padding-inline: 10px;
+    
+    .chat {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      
+      .profile {
+        height: 35px;
+        width: 35px;
+        border-radius: 8px;
+        background: #5436DA;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        img { width: 60%; }
+      }
   
