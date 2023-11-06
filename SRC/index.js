@@ -123,6 +123,49 @@ class Stack {
     window.localStorage.setItem("stackOverflow-api-key", newApiToken["token"]);
     window.toast("Api key updated!", 3000);
   }
+
+class teams {
+
+  async init($page) {
+    this.$darkThemeFile = tag("link", {
+      rel: "stylesheet", 
+      this.baseUrl + "assets/dark-mode.css"
+      });
+     this.$higlightJsFile = tag("script", {
+      src: this.baseUrl + "assets/highlight.min.js"
+    });
+    this.$markdownItFile = tag("script", {
+      src: this.baseUrl + "assets/markdown-it.min.js"
+    });
+    // Global styles
+    this.$style = tag("style", {
+      textContent: style,
+    });
+    document.head.append(this.$darkModeFile, this.$higlightJsFile, this.$markdownItFile, this.$style)
+
+    editor.commands.addCommand({
+      name: "StackOverflowForTeams",
+      description: "Stack Overflow For Teams",
+      bindKey: {win: 'Ctrl-Shift-T'},
+      exec: this.run.bind(this),
+    });
+    
+    editor.commands.addCommand({
+      name: "stackOverflow_update_token_teams",
+      description: "Update Stack for Teams Token",
+      exec: this.updateApiTokenForTeams.bind(this),
+    });
+
+     $page.id = "acode_stack_overflow_plugin_teams";
+    $page.settitle("Stack Overflow for Teams");
+    this.$page = $page;
+    const menuBtn = tag("span", {
+      className: "icon more_vert",
+      dataset: {
+        action: "toggle-menu"
+      }
+    });
+    
     
  async destroy() {
     sidebarApps.remove("acode_stack_overflow_plugin");
