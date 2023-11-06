@@ -122,9 +122,10 @@ class Stack {
     );
     window.localStorage.setItem("stackOverflow-api-key", newApiToken["token"]);
     window.toast("Api key updated!", 3000);
+     
   }
-
-class teams {
+  
+  class teams {
 
   async init($page) {
     this.$darkThemeFile = tag("link", {
