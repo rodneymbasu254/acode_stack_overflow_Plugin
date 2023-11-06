@@ -125,7 +125,7 @@ class Stack {
      
   }
   
-  class teams {
+  class Teams {
 
   async init($page) {
     this.$darkThemeFile = tag("link", {
