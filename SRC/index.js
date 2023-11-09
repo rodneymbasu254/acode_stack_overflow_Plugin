@@ -126,7 +126,7 @@ class Stack {
        fetch(`https://api.stackexchange.com/2.3/answers/post?key=TxIU6R1sjc2rsPmGl37jYw((`, {
   method: 'POST',
   headers: {
-    'Content-Type': 'application/json'
+    'Content-Type': '../plugin.json'
   },
   body: JSON.stringify({
     question_id: "/",
@@ -137,6 +137,8 @@ class Stack {
   .then(data => {
     // Handle the response from the API
   });
+
+
      
   }
   
