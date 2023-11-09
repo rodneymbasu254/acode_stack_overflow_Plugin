@@ -123,14 +123,14 @@ class Stack {
     window.localStorage.setItem("stackOverflow-api-key", newApiToken["token"]);
     window.toast("Api key updated!", 3000);
 
-       fetch(`https://api.stackexchange.com/2.3/answers/post?key=YOUR_API_KEY`, {
+       fetch(`https://api.stackexchange.com/2.3/answers/post?key=TxIU6R1sjc2rsPmGl37jYw((`, {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json'
   },
   body: JSON.stringify({
-    question_id: 123456,
-    body: 'This is my answer to the question.'
+    question_id: "/",
+    body: '/'
   })
 })
   .then(response => response.json())
