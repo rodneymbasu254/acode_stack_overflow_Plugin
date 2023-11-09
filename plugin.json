@@ -1,5 +1,5 @@
 {
-  "id": "acode.plugin.stack_overflow",
+  "id": "acode_stack_overflow_Plugin",
   "name": "StackOverflow",
   "main": "dist/main.js",
   "version": "1.0.0",
