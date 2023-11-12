@@ -136,6 +136,7 @@ class Stack {
   .then(response => response.json())
   .then(data => {
     // Handle the response from the API
+    
   });
 
 
@@ -220,7 +221,3 @@ if (window.acode) {
     
     
     
-https://stackoverflow.com/questions/ask  
-https://stackoverflow.com/users/
-https://stackoverflow.com/oauth/client_id=27386
-Q1AW2GZJ3MeKr4rq8SjdWg((
